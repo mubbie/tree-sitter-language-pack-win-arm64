@@ -79,7 +79,7 @@ jobs:
         run: uv sync --no-install-project
 
       - name: Cache parsers
-        uses: actions/cache@v5.0.3
+        uses: actions/cache@v5.0.4
         with:
           path: parsers
           key: parsers-${{ hashFiles('sources/language_definitions.json') }}
@@ -183,7 +183,7 @@ jobs:
           install-llvm-cov: "false"
 
       - name: Cache pip
-        uses: actions/cache@v5.0.3
+        uses: actions/cache@v5.0.4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ matrix.python-version }}-${{ hashFiles('**/requirements*.txt') }}
