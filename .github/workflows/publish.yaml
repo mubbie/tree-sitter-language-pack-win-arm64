@@ -93,7 +93,7 @@ jobs:
           path: parsers
 
       - name: Setup Rust
-        uses: kreuzberg-dev/actions/setup-rust@v1.0.0
+        uses: kreuzberg-dev/actions/setup-rust@v1.2.1
         with:
           components: ""
           use-sccache: "false"
